@@ -1,5 +1,4 @@
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
-import lerixLogo from "@assets/LerixAI_20250615_172726_0000_1749990316541.jpg";
 
 export default function Footer() {
   const scrollToSection = (href: string) => {
@@ -21,12 +20,18 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-2 mb-6">
+            <div className="flex items-center space-x-3 mb-6">
               <img 
-                src={lerixLogo} 
-                alt="LerixAI Logo" 
-                className="h-12 w-auto object-contain"
+                src="/lerix-icon.svg" 
+                alt="LerixAI Icon" 
+                className="h-8 w-auto object-contain"
               />
+              <div>
+                <div className="flex items-center">
+                  <span className="text-xl font-bold text-[var(--lerix-light)]">Lerix</span>
+                  <span className="text-xl font-bold text-white">AI</span>
+                </div>
+              </div>
             </div>
             <p className="text-slate-300 mb-6 max-w-md">
               Revolutionizing website optimization with AI-powered analysis, threat detection, and actionable insights.

@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import lerixLogo from "@assets/LerixAI_20250615_172726_0000_1749990316541.jpg";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,10 +28,17 @@ export default function Navigation() {
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-3">
               <img 
-                src={lerixLogo} 
-                alt="LerixAI Logo" 
-                className="h-12 w-auto object-contain"
+                src="/lerix-icon.svg" 
+                alt="LerixAI Icon" 
+                className="h-8 w-auto object-contain"
               />
+              <div>
+                <div className="flex items-center">
+                  <span className="text-2xl font-bold text-[var(--lerix-teal)]">Lerix</span>
+                  <span className="text-2xl font-bold text-slate-800">AI</span>
+                </div>
+                <p className="text-xs text-slate-600 leading-none -mt-1">Analyze. Detect. Instantly.</p>
+              </div>
             </div>
           </div>
 

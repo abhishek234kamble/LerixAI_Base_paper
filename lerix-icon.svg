@@ -1,0 +1,13 @@
+<svg width="48" height="32" viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circular chart element -->
+  <circle cx="70" cy="80" r="50" fill="none" stroke="#00bcd4" stroke-width="8" stroke-dasharray="220 100" stroke-dashoffset="30" transform="rotate(-90 70 80)"/>
+  
+  <!-- Bar chart elements -->
+  <rect x="110" y="100" width="20" height="40" fill="#3f51b5"/>
+  <rect x="140" y="80" width="20" height="60" fill="#3f51b5"/>
+  <rect x="170" y="60" width="20" height="80" fill="#3f51b5"/>
+  <rect x="200" y="40" width="20" height="100" fill="#3f51b5"/>
+  
+  <!-- Arrow element -->
+  <path d="M180 50 L220 10 L210 20 L230 0 L240 10 L220 30 L230 20 L190 60 Z" fill="#00bcd4"/>
+</svg>

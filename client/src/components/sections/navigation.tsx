@@ -27,11 +27,14 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-3">
-              <img 
-                src="/lerix-icon.svg" 
-                alt="LerixAI Icon" 
-                className="h-8 w-auto object-contain"
-              />
+              <svg width="32" height="24" viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+                <circle cx="70" cy="80" r="50" fill="none" stroke="#00bcd4" strokeWidth="8" strokeDasharray="220 100" strokeDashoffset="30" transform="rotate(-90 70 80)"/>
+                <rect x="110" y="100" width="20" height="40" fill="#3f51b5"/>
+                <rect x="140" y="80" width="20" height="60" fill="#3f51b5"/>
+                <rect x="170" y="60" width="20" height="80" fill="#3f51b5"/>
+                <rect x="200" y="40" width="20" height="100" fill="#3f51b5"/>
+                <path d="M180 50 L220 10 L210 20 L230 0 L240 10 L220 30 L230 20 L190 60 Z" fill="#00bcd4"/>
+              </svg>
               <div>
                 <div className="flex items-center">
                   <span className="text-2xl font-bold text-[var(--lerix-teal)]">Lerix</span>

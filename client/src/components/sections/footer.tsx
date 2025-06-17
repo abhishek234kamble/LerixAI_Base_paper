@@ -1,3 +1,4 @@
+import { TrendingUp, ArrowUp } from "lucide-react";
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
@@ -20,15 +21,15 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
-              <svg width="32" height="24" viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
-                <circle cx="70" cy="80" r="50" fill="none" stroke="#00bcd4" strokeWidth="8" strokeDasharray="220 100" strokeDashoffset="30" transform="rotate(-90 70 80)"/>
-                <rect x="110" y="100" width="20" height="40" fill="#3f51b5"/>
-                <rect x="140" y="80" width="20" height="60" fill="#3f51b5"/>
-                <rect x="170" y="60" width="20" height="80" fill="#3f51b5"/>
-                <rect x="200" y="40" width="20" height="100" fill="#3f51b5"/>
-                <path d="M180 50 L220 10 L210 20 L230 0 L240 10 L220 30 L230 20 L190 60 Z" fill="#00bcd4"/>
-              </svg>
+            <div className="flex items-center space-x-2 mb-6">
+              <div className="relative">
+                <div className="w-10 h-10 lerix-gradient rounded-lg flex items-center justify-center">
+                  <TrendingUp className="text-white text-lg" size={20} />
+                </div>
+                <div className="absolute -top-1 -right-1 w-4 h-4 bg-[var(--lerix-light)] rounded-full flex items-center justify-center">
+                  <ArrowUp className="text-white" size={8} />
+                </div>
+              </div>
               <div>
                 <div className="flex items-center">
                   <span className="text-xl font-bold text-[var(--lerix-light)]">Lerix</span>

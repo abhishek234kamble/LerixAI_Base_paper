@@ -47,18 +47,17 @@ app.use((req, res, next) => {
     throw err;
   });
 
-  // importantly only setup vite in development and after
-  // setting up all the other routes so the catch-all route
-  // doesn't interfere with the other routes
+  // ✅ ENVIRONMENT VARIABLE print karne ke liye yahaan console.log lagaya hai
+  console.log("SECRET_MESSAGE:", process.env.SECRET_MESSAGE);
+
+  // Vite sirf development mein use hoga
   if (app.get("env") === "development") {
     await setupVite(app, server);
   } else {
     serveStatic(app);
   }
 
-  // ALWAYS serve the app on port 5000
-  // this serves both the API and the client.
-  // It is the only port that is not firewalled.
+  // ✅ Port 5000 pe app ko chala rahe hain
   const port = 5000;
   server.listen({
     port,

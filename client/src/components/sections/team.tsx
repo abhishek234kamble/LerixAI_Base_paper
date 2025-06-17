@@ -1,31 +1,35 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Plus } from "lucide-react";
+import abhishekImage from "@assets/Yasin_1750164593844.png";
+import jayshreeImage from "@assets/1747235988245_1750164594013.png";
+import yaseenImage from "@assets/IMG-20250616-WA0002_1750164594042.jpg";
+import sudarshanImage from "@assets/1750164274054_1750164594058.jpg";
 
 export default function Team() {
   const teamMembers = [
     {
-      name: "Abhishek",
+      name: "Abhishek Kamble",
       role: "Founder, AI/ML Lead",
       description: "Leading AI innovation and machine learning implementation strategies",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80"
+      image: abhishekImage
     },
     {
       name: "Yaseen",
       role: "Backend & Frontend",
       description: "Full-stack development expertise with modern web technologies",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80"
+      image: yaseenImage
     },
     {
       name: "Sudarshan",
       role: "UI/UX Designer",
       description: "Creating intuitive and engaging user experiences",
-      image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80"
+      image: sudarshanImage
     },
     {
-      name: "Jayshree",
+      name: "Jayshree Maske",
       role: "Data Visualization (Power BI)",
       description: "Transforming complex data into actionable business insights",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80"
+      image: jayshreeImage
     }
   ];
 

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, TrendingUp, ArrowUp } from "lucide-react";
+import { Menu } from "lucide-react";
+import lerixLogo from "@assets/LerixAI_20250615_172726_0000_1749990316541.jpg";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,22 +27,12 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-2">
-              <div className="relative">
-                <div className="w-10 h-10 lerix-gradient rounded-lg flex items-center justify-center">
-                  <TrendingUp className="text-white text-lg" size={20} />
-                </div>
-                <div className="absolute -top-1 -right-1 w-4 h-4 bg-[var(--lerix-light)] rounded-full flex items-center justify-center">
-                  <ArrowUp className="text-white" size={8} />
-                </div>
-              </div>
-              <div>
-                <div className="flex items-center">
-                  <span className="text-xl font-bold text-[var(--lerix-teal)]">Lerix</span>
-                  <span className="text-xl font-bold text-slate-800">AI</span>
-                </div>
-                <p className="text-xs text-slate-600 leading-none">Analyze. Detect. Instantly.</p>
-              </div>
+            <div className="flex items-center space-x-3">
+              <img 
+                src={lerixLogo} 
+                alt="LerixAI Logo" 
+                className="h-12 w-auto object-contain"
+              />
             </div>
           </div>
 

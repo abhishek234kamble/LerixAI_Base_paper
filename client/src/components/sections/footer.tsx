@@ -1,5 +1,5 @@
-import { TrendingUp, ArrowUp } from "lucide-react";
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+import lerixLogo from "@assets/LerixAI_20250615_172726_0000_1749990316541.jpg";
 
 export default function Footer() {
   const scrollToSection = (href: string) => {
@@ -22,20 +22,11 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="relative">
-                <div className="w-10 h-10 lerix-gradient rounded-lg flex items-center justify-center">
-                  <TrendingUp className="text-white text-lg" size={20} />
-                </div>
-                <div className="absolute -top-1 -right-1 w-4 h-4 bg-[var(--lerix-light)] rounded-full flex items-center justify-center">
-                  <ArrowUp className="text-white" size={8} />
-                </div>
-              </div>
-              <div>
-                <div className="flex items-center">
-                  <span className="text-xl font-bold text-[var(--lerix-light)]">Lerix</span>
-                  <span className="text-xl font-bold text-white">AI</span>
-                </div>
-              </div>
+              <img 
+                src={lerixLogo} 
+                alt="LerixAI Logo" 
+                className="h-12 w-auto object-contain"
+              />
             </div>
             <p className="text-slate-300 mb-6 max-w-md">
               Revolutionizing website optimization with AI-powered analysis, threat detection, and actionable insights.
